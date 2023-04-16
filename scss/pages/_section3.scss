@@ -1,0 +1,36 @@
+#main__discover {
+  width: 100%;
+  background-color: $background-color_2;
+}
+.main__discover__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-intro-01.jpg.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  span {
+    font-family: $font-family_2;
+    font-size: 30px;
+    line-height: 1.2;
+    color: $color_2;
+  }
+  h3 {
+    font-family: $font-family_3;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: $color_1;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+  }
+}
+.main__discover__background-title {
+padding: 135px 0 158px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

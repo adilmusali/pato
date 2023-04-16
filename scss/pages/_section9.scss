@@ -1,0 +1,54 @@
+#main__video {
+  width: 100%;
+  background-color: $background-color_2;
+}
+.main__video__background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-cover-video-02.jpg.webp);
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  span {
+    font-family: $font-family_2;
+    font-size: 30px;
+    line-height: 1.2;
+    color: $color_2;
+  }
+  h3 {
+    font-family: $font-family_3;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: $color_1;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    word-spacing: 6px;
+  }
+}
+.main__video__background-title {
+  padding: 225px 0 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  &>div{
+    margin: 30px 0 0 0;
+    padding: 25px 27px 25px 27px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.5s;
+    i{
+      font-size: 20px;
+    }
+    &:hover{
+      transform: scale(1.2);
+      background-color: red;
+      opacity: 0.5;
+      i{
+        color: white;
+      }
+    }
+  }
+}
