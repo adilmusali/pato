@@ -1,0 +1,132 @@
+#main__reservation {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #eeeeee;
+}
+
+.main__reservation__title {
+  text-align: center;
+  span {
+    font-family: $font-family_2;
+    font-size: 30px;
+    line-height: 1.2;
+    color: $color_3;
+  }
+  h3 {
+    font-family: $font-family_3;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    color: $color_4;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    margin-bottom: 35px;
+    margin-top: 5px;
+  }
+}
+
+.main__reservation__container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  &__left {
+    .main__reservation__form {
+      .form__btn {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0 0 0;
+        button {
+          font-family: Montserrat;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 1.1;
+          color: white;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          border: none;
+          background-color: black;
+          color: white;
+          padding: 13px 30px;
+          border-radius: 10px;
+          cursor: pointer;
+          transition: 0.4s;
+          &:hover{
+            background-color: red;
+          }
+        }
+      }
+      form {
+        display: flex;
+        gap: 20px;
+        .form__left,
+        .form__right {
+          display: flex;
+          flex-direction: column;
+          gap: 40px;
+        }
+        .form__input {
+          height: 47px;
+          input {
+            padding: 20px 100px 20px 20px;
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 14px;
+            color: #666666;
+            width: 100%;
+            height: 100%;
+            border: 2px solid rgb(222, 222, 222);
+            border-radius: 10px;
+          }
+          label {
+            font-family: Montserrat;
+            font-weight: 400;
+            font-size: 15px;
+            color: #555555;
+            display: block;
+          }
+          select {
+            height: 28px;
+            font-family: Montserrat, sans-serif;
+            font-weight: 400;
+            border: 1px solid rgb(159, 159, 159);
+            border-radius: 5px;
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    .main__reservation__image {
+      width: 390px;
+      height: 390px;
+      overflow: hidden;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .main__reservation__container {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 576px) {
+  form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__reservation__image {
+    width: 280px !important;
+    height: 280px !important;
+  }
+}

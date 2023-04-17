@@ -99,7 +99,7 @@
 }
 
 .main__menu__look-menu-title {
-  padding-top: 100px;
+  padding-top: 200px;
 }
 .main__menu__look-menu-title span {
   font-family: Courgette;
@@ -377,6 +377,278 @@
   #main__learn_more .main__learn_more__box {
     width: 80%;
     height: 90%;
+  }
+}
+#main__events {
+  width: 100%;
+  padding: 100px 0;
+  background-image: url(https://preview.colorlib.com/theme/pato/images/bg-event-04.jpg.webp);
+  background-repeat: no-repeat;
+}
+
+.main__event__images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  margin: 0 50px;
+}
+.main__event__images img {
+  width: 50%;
+  cursor: pointer;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.main__event__images .main__event__images__title {
+  text-align: center;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main__event__images .main__event__images__title h4 {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.2;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.main__event__images .main__event__images__title p {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #666666;
+  margin: 0px;
+}
+.main__event__images .main__event__images__title .spans {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.main__event__images .main__event__images__title .spans > div {
+  display: flex;
+  flex-direction: column;
+}
+.main__event__images .main__event__images__title .first__span {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 50px;
+  color: #ec1d25;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.main__event__images .main__event__images__title .second__span {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 12px;
+  color: #999999;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.main__event__images .main__event__images__title a {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  color: #222222;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: 0.4s;
+  margin: 20px;
+}
+.main__event__images .main__event__images__title a:hover {
+  color: red;
+}
+
+.main__event__title {
+  text-align: center;
+}
+.main__event__title span {
+  font-family: Courgette;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #d61c22;
+}
+.main__event__title h3 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
+@media (max-width: 992px) {
+  .main__event__images {
+    flex-wrap: wrap;
+    margin: 0 150px;
+    gap: 20px;
+  }
+  img {
+    width: 100% !important;
+  }
+  h4 {
+    font-size: 18px !important;
+  }
+  p {
+    font-size: 12px !important;
+  }
+  .first__span {
+    font-size: 30px !important;
+  }
+  .second__span {
+    font-size: 12px !important;
+  }
+}
+@media (max-width: 576px) {
+  .spans {
+    flex-wrap: wrap !important;
+  }
+  .spans > div {
+    width: 20% !important;
+  }
+  h4 {
+    font-size: 15px !important;
+  }
+  p {
+    font-size: 10px !important;
+  }
+}
+#main__reservation {
+  width: 100%;
+  padding: 100px 0;
+  background-color: #eeeeee;
+}
+
+.main__reservation__title {
+  text-align: center;
+}
+.main__reservation__title span {
+  font-family: Courgette;
+  font-size: 30px;
+  line-height: 1.2;
+  color: #d61c22;
+}
+.main__reservation__title h3 {
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 1.2;
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  margin-bottom: 35px;
+  margin-top: 5px;
+}
+
+.main__reservation__container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.main__reservation__container__left .main__reservation__form .form__btn {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+}
+.main__reservation__container__left .main__reservation__form .form__btn button {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.1;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 13px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.main__reservation__container__left .main__reservation__form .form__btn button:hover {
+  background-color: red;
+}
+.main__reservation__container__left .main__reservation__form form {
+  display: flex;
+  gap: 20px;
+}
+.main__reservation__container__left .main__reservation__form form .form__left,
+.main__reservation__container__left .main__reservation__form form .form__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.main__reservation__container__left .main__reservation__form form .form__input {
+  height: 47px;
+}
+.main__reservation__container__left .main__reservation__form form .form__input input {
+  padding: 20px 100px 20px 20px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666666;
+  width: 100%;
+  height: 100%;
+  border: 2px solid rgb(222, 222, 222);
+  border-radius: 10px;
+}
+.main__reservation__container__left .main__reservation__form form .form__input label {
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 15px;
+  color: #555555;
+  display: block;
+}
+.main__reservation__container__left .main__reservation__form form .form__input select {
+  height: 28px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+  border: 1px solid rgb(159, 159, 159);
+  border-radius: 5px;
+}
+.main__reservation__container__right .main__reservation__image {
+  width: 390px;
+  height: 390px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.main__reservation__container__right .main__reservation__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.5s;
+}
+.main__reservation__container__right .main__reservation__image img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 992px) {
+  .main__reservation__container {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__reservation__image {
+    width: 280px !important;
+    height: 280px !important;
   }
 }
 #main__review {
