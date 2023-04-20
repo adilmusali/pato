@@ -495,19 +495,19 @@
     margin: 0 150px;
     gap: 20px;
   }
-  img {
+  .main__event__images img {
     width: 100% !important;
   }
-  h4 {
+  .main__event__images__title h4 {
     font-size: 18px !important;
   }
-  p {
+  .main__event__images__title p {
     font-size: 12px !important;
   }
-  .first__span {
+  .main__event__images__title .first__span {
     font-size: 30px !important;
   }
-  .second__span {
+  .main__event__images__title .second__span {
     font-size: 12px !important;
   }
 }
@@ -518,10 +518,10 @@
   .spans > div {
     width: 20% !important;
   }
-  h4 {
+  .main__event__images__title h4 {
     font-size: 15px !important;
   }
-  p {
+  .main__event__images__title p {
     font-size: 10px !important;
   }
 }
